@@ -49,7 +49,7 @@ register(
 # 5. 序列反转任务：将输入序列完全逆序输出（基础序列处理任务）
 register(
     id='Reverse-v0',
-    entry_point='gym.envs.algorithmic:ReverseEnv',
+    entry_point='gym.envs.algorithmic:ReverseEnv', # 指定算法类环境的入口点
     max_episode_steps=200,
     reward_threshold=25.0,
 )
