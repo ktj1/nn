@@ -191,7 +191,7 @@ class GaussianMixtureModel:
                 
                 # 正则化：添加小的对角矩阵，防止协方差矩阵奇异
                 eps = 1e-6  # 正则化系数
-                new_sigma_k += np.eye(n_features) * eps
+                new_sigma_k += np.eye(n_features) * eps # 对协方差矩阵进行正则化处理，添加对角线扰动
                 
                 new_sigma[k] = new_sigma_k
 
