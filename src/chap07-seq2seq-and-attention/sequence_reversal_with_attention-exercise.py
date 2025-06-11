@@ -72,7 +72,7 @@ print(get_batch(2, 10))
 
 class mySeq2SeqModel(keras.Model):
     def __init__(self):
-        super(mySeq2SeqModel, self).__init__()
+        super(mySeq2SeqModel, self).__init__() 调用父类的构造函数完成初始化
         
         # 词汇表大小: 26个字母 + 1个填充标记(0)
         self.v_sz = 27
