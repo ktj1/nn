@@ -219,7 +219,7 @@ register(
 # 8. 数字猜测游戏：通过反馈猜测目标数字（适合演示Q学习）
 register(
     id='GuessingGame-v0',
-    entry_point='gym.envs.toy_text.guessing_game:GuessingGame',
+    entry_point='gym.envs.toy_text.guessing_game:GuessingGame', # 指定强化学习环境的入口点
     max_episode_steps=200,
 )
 
