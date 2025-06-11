@@ -297,7 +297,7 @@ class World(object): # Carla 仿真世界的核心管理类，负责初始化和
             spawn_point.rotation.roll = 0.0
             spawn_point.rotation.pitch = 0.0
             self.destroy()
-            self.player = self.world.try_spawn_actor(blueprint, spawn_point)
+            self.player = self.world.try_spawn_actor(blueprint, spawn_point) # 尝试在指定生成点创建并放置一个角色
             self.show_vehicle_telemetry = False
             self.modify_vehicle_physics(self.player)
         while self.player is None:
