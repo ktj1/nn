@@ -119,8 +119,8 @@ register(
 register(
     id='LunarLanderContinuous-v2',
     entry_point='gym.envs.box2d:LunarLanderContinuous',
-    max_episode_steps=1000,
-    reward_threshold=200,
+    max_episode_steps=1000,  # 单个episode的最大步数限制
+    reward_threshold=200, # 判定训练成功的奖励阈值
 )
 
 # 2. 双足步行机器人（普通地形）
