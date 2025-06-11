@@ -2,10 +2,10 @@
 # coding: utf-8
 
 # 导入必要的库
-import os
-import torch
-import torch.nn as nn
-import torch.utils.data as Data
+import os                        # 操作系统接口模块
+import torch                     # PyTorch主库
+import torch.nn as nn            # 神经网络模块
+import torch.utils.data as Data  # 数据处理工具模块
 import torchvision               # 包含常用的数据集和模型
 import torch.nn.functional as F  # 包含常用的函数式API，如ReLU, softmax等
 import numpy as np
